@@ -1,16 +1,17 @@
 body{
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(24, 24, 24);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     cursor: context-menu;
+    color: white;
 }
 section{
-    background-color: rgb(63, 63, 63);
+    background-color: rgb(58, 58, 58);
     margin: 0 auto;
-    width: 400px;
-    height: 650px;
+    width: 350px;
+    height: auto;
     border-radius: 3%;
     margin-top: 5%;
-    box-shadow: 0 0 50px rgb(0, 255, 21);
+    box-shadow: 0 0 15px rgb(0, 255, 21);
 }
 
 .perfil{
@@ -23,12 +24,19 @@ section{
     border-radius: 50%;
 }
 
+.p1 {
+    font-weight: bold;
+}
+.p2 {
+    margin-top: 7%;
+}
 
 .boton {
     padding: 3%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 .boton .btn {
@@ -36,7 +44,7 @@ section{
     justify-content: center;
     align-items: center;
     background-color: rgb(100, 100, 100);
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
@@ -50,3 +58,21 @@ section{
     background-color: #00c500;
 }
 
+@media (max-width: 600px) {
+    section {
+        width: 65%;
+        height: auto; 
+        box-shadow: none; 
+        margin-top: 5%;
+        box-shadow: 0 0 15px rgb(0, 255, 21);
+}
+    }
+
+    .foto {
+        height: 150px; 
+    }
+
+    .boton .btn {
+        width: 90%; 
+    }
+}
